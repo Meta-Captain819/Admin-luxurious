@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export function middleware(request) {
   // Retrieve the user token from cookies (adjust based on your auth setup)
-  const token = request.cookies.get("authToken")?.value;
+  const token = request.cookies.get("token")?.value;
 
   // Define the paths that require authentication
   const protectedPaths = ["/dashboard", "/settings", "/orders", "/admin","/history"];
@@ -21,7 +21,4 @@ export function middleware(request) {
   return NextResponse.next();
 }
 
-// Match middleware to specific routes (optional, for improved performance)
-export const config = {
-  matcher: ["/dashboard/:path*", "/settings/:path*", "/orders/:path*", "/admin/:path*"],
-};
+

@@ -106,7 +106,8 @@ export default function Login() {
               required
             />
           </div>
-
+{error1 && <p className="text-red-500 text-center mb-4">{error1}</p>}
+{error2 && <p className="text-red-500 text-center mb-4">{error2}</p>}
           <button
             type="submit"
             className="w-full py-3 bg-gold text-white text-xl font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-gold hover:bg-amber-500 transition duration-300"
