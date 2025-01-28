@@ -325,7 +325,7 @@ export default function Dashboard() {
                   {order.map((order) => (
                     <div
                       key={order._id}
-                      className="bg-white text-black rounded-lg shadow-lg p-6 xl:w-[1100px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
+                      className="bg-white text-black rounded-lg shadow-lg p-6 xl:w-[1050px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
                     >
                       {/* Order Details */}
                       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-4 w-full">
@@ -409,7 +409,7 @@ export default function Dashboard() {
 
         {selectedSection === "Users" && (
           <>
-            <section className="min-h-screen bg-black text-white py-8 px-4 lg:px-10 xl:w-[1100px] lg:w-[800px] md:w-[600px] w-[400px]">
+            <section className="min-h-screen bg-black text-white py-8 px-4 lg:px-10 xl:w-[1050px] lg:w-[800px] md:w-[600px] w-[400px]">
               <h1 className="text-3xl font-bold text-gold text-center mb-10">
                 User Details
               </h1>
@@ -431,7 +431,7 @@ export default function Dashboard() {
                     {filteredUsers.map((user) => (
                       <div
                       key={user._id}
-                      className="bg-gradient-to-br from-black via-gray-900 to-black rounded-xl shadow-xl p-6 xl:w-[1100px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
+                      className="bg-gradient-to-br from-black via-gray-900 to-black rounded-xl shadow-xl p-6 xl:w-[1000px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
                     >
                       {/* Header Section */}
                       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
@@ -469,7 +469,7 @@ export default function Dashboard() {
                   {user.map((user) => (
                     <div
                       key={user._id}
-                      className="bg-gradient-to-br from-black via-gray-900 to-black rounded-xl shadow-xl p-6 xl:w-[1100px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
+                      className="bg-gradient-to-br from-black via-gray-900 to-black rounded-xl shadow-xl p-6 xl:w-[1000px] lg:w-[800px] md:w-[600px] w-[400px] mx-auto"
                     >
                       {/* Header Section */}
                       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
